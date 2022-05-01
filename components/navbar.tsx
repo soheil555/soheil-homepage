@@ -90,7 +90,7 @@ export default function NavBar({ path }: NavBarProps) {
           </LinkItem>
         </Stack>
 
-        <Box flexGrow={1} textAlign="right">
+        <Box flexGrow={1} display="flex" justifyContent="flex-end">
           <ThemeToggleButton />
 
           <Box ml={4} display={{ base: "inline-block", md: "none" }}>
