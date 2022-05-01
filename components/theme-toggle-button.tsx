@@ -7,7 +7,7 @@ export default function ThemeToggleButton() {
   return (
     <IconButton
       aria-label="toggle theme"
-      // onClick={toggleColorMode}
+      onClick={toggleColorMode}
       colorScheme={useColorModeValue("purple", "orange")}
       icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
     ></IconButton>
