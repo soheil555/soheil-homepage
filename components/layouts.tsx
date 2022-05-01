@@ -18,9 +18,7 @@ export default function Layout({ children, path }: Props) {
 
       <NavBar path={path} />
 
-      <Container bg="ButtonFace" maxW="container.md">
-        {children}
-      </Container>
+      <Container maxW="container.md">{children}</Container>
     </Box>
   );
 }

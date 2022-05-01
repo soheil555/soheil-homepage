@@ -6,7 +6,7 @@ import styled from "@emotion/styled";
 const LogoBox = styled.span`
   display: inline-flex;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
   gap: 10px;
 
   img {
@@ -25,7 +25,7 @@ export default function Logo() {
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={logoPath} width={35} height={35} alt="logo" />
+          <Image src={logoPath} width={25} height={25} alt="logo" />
           <Text>Soheil Rasekh</Text>
         </LogoBox>
       </a>

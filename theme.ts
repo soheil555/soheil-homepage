@@ -5,12 +5,31 @@ export const config: ThemeConfig = {
   useSystemColorMode: false,
 };
 
-const theme = extendTheme({
-  config,
-  fonts: {
-    heading: "Ubuntu",
-    body: "Ubuntu",
+const components = {
+  Heading: {
+    variants: {
+      "section-title": {
+        textDecoration: "underline",
+        fontSize: 20,
+        textUnderlineOffset: 6,
+        textDecorationColor: "#525252",
+        textDecorationThickness: 4,
+        marginTop: 3,
+        marginBottom: 4,
+      },
+    },
   },
+};
+
+const fonts = {
+  heading: "Ubuntu",
+  body: "Ubuntu",
+};
+
+const theme = extendTheme({
+  components,
+  config,
+  fonts,
 });
 
 export default theme;
