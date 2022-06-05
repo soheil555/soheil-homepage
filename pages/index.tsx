@@ -63,11 +63,11 @@ const Home: NextPage = () => {
       <Section delay={0.1}>
         <Heading variant="section-title">Work</Heading>
         <Text>
-          I am a freelance developer who would love to contribute to open
-          source. I currently mostly participate in web3 Hackathons and Bounties
-          to grow with project-based learning. I am open to new job
-          opportunities. Feel free to contact me if you have any questions or
-          have a cool project and looking for a team member.
+          I am a freelance developer who loves to contribute to open source. I
+          currently mostly participate in web3 Hackathons and Bounties to grow
+          with project-based learning. I am open to new job opportunities. Feel
+          free to contact me if you have any questions or have a cool project
+          and looking for a team member.
         </Text>
 
         <Box display="flex" mt="3" justifyContent="center">
