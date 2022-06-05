@@ -29,12 +29,13 @@ interface LinkItemProps {
 function LinkItem({ href, path, target, children }: LinkItemProps) {
   const isActive = href === path;
   const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
+  const activeColor = useColorModeValue("teal.100", "teal.500");
 
   return (
     <NextLink href={href} passHref>
       <Link
         color={isActive ? undefined : inactiveColor}
-        bg={isActive ? "teal.50" : undefined}
+        bg={isActive ? activeColor : undefined}
         p={2}
         target={target}
       >
@@ -50,7 +51,13 @@ interface NavBarProps {
 
 export default function NavBar({ path }: NavBarProps) {
   return (
-    <Box as="nav" width="100%" bg={useColorModeValue("#F4EDE4", "#202023")}>
+    <Box
+      position="fixed"
+      zIndex="1"
+      as="nav"
+      width="100%"
+      bg={useColorModeValue("#F4EDE4", "#202023")}
+    >
       <Container
         p={2}
         maxW="container.md"
@@ -71,12 +78,8 @@ export default function NavBar({ path }: NavBarProps) {
           gap={4}
           flexGrow={1}
         >
-          <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem>
-
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="/blog" path={path}>
+            Blog
           </LinkItem>
 
           <LinkItem
@@ -106,12 +109,8 @@ export default function NavBar({ path }: NavBarProps) {
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
 
-                <NextLink href="/works">
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-
-                <NextLink href="/posts">
-                  <MenuItem as={Link}>Posts</MenuItem>
+                <NextLink href="/blog">
+                  <MenuItem as={Link}>Blog</MenuItem>
                 </NextLink>
 
                 <Link

@@ -26,7 +26,7 @@ export default function Logo() {
       <a>
         <LogoBox>
           <Image src={logoPath} width={25} height={25} alt="logo" />
-          <Text>Soheil Rasekh</Text>
+          <Text>Soheil</Text>
         </LogoBox>
       </a>
     </Link>

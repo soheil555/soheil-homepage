@@ -14,7 +14,7 @@ const components = {
         textUnderlineOffset: 6,
         textDecorationColor: "#525252",
         textDecorationThickness: 4,
-        marginTop: 3,
+        marginTop: 6,
         marginBottom: 4,
       },
     },
